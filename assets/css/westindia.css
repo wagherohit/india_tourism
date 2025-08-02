@@ -1,0 +1,586 @@
+/* ========== Reset and Base ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.logo img {
+  width: 50px;
+}
+.nav-links, .nav-icons {
+  display: flex;
+  gap: 25px;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a:hover {
+  color: #FF6600;
+}
+.wide-dropdown {
+width: 800px; /* increase as needed */
+height: 250px;
+}
+
+.dropdown-links {
+display: flex;
+flex-direction: column;
+flex: 1;
+}
+
+.dropdown-image-box {
+flex-shrink: 0;
+}
+
+.dropdown-menu {
+border-radius: 0.5rem;
+transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+background-color: #f0f0f0;
+}
+/* ========== Navbar ========== */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid #ccc;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 10px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.menu a:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+/* ========== First Section ========== */
+.first-section {
+  padding-top: 45px;
+}
+
+.first-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.first-title span {
+  color: orangered;
+}
+
+.first-text {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 15px;
+}
+
+.first-image {
+  width: 100%;
+  max-width: 500px;
+  clip-path: ellipse(85% 100% at 100% 50%);
+  overflow: hidden;
+}
+
+.first-image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ========== Second Section ========== */
+.second-block {
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  background: #fff;
+}
+
+.second-section {
+  padding: 30px 0;
+}
+
+.second-section span {
+  font-size: 1rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.second-section .d-flex {
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ========== Third Section ========== */
+.third-section h3 {
+  font-size: 2rem;
+}
+
+.third-section h4 {
+  font-size: 1.4rem;
+  /* font-family: 'Playfair Display', serif; */
+}
+
+.third-section p {
+  font-size: 1rem;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+}
+
+.third-section .table td {
+  font-size: 0.97rem;
+  padding: 0.75rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ========== Fourth / sixth -Section ========== */
+/* 
+.fourth-section h4,
+.sixth-section h4{
+  font-family: 'Playfair Display', serif;
+} */
+
+.fourth-img,
+.sixth-img{
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.fourth-container,
+.sixth-container {
+  position: relative;
+  display: inline-block;
+}
+
+.fourth-container .caption,
+.sixth-container .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+}
+
+/* ========== Fifth Section ========== */
+/* 
+.fifth-section h4 {
+  font-family: 'Playfair Display', serif;
+} */
+
+.tour-card {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.tour-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.tour-info {
+  padding-top: 8px;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+/* ========== Seventh /Eighth / Ninth / Tenth / Eleventh - Section ========== */
+/* .seventh-section h4,
+.eighth-section h4,
+.ninthth-section h4,
+.tenthth-section h4 ,
+.eleventh-section h4{
+  font-family: 'Playfair Display', serif;
+} */
+
+.seventh-section .card,
+.eighth-section .card,
+.ninth-section .card, 
+.tenth-section .card,
+.eleventh-section .card,
+.thirteenth-section .card{
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.seventh-section .card-img-top,
+.eighth-section .card-img-top,
+.ninth-section .card-img-top,
+.tenth-section .card-img-top,
+.eleventh-section .card-img-top,
+.thirteenth-section .card-img-top {
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.thirteenth-section .card-img-top {
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.seventh-section .card-title,
+.eighth-section .card-title,
+.ninth-section .card-title,
+.tenth-section .card-title,
+.eleventh-section .card-title,
+.thirteenth-section .card-title{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.seventh-section .card-text,
+.eighth-section .card-text,
+.ninth-section .card-text,
+.tenth-section .card-text,
+.eleventh-section .card-text{
+  font-size: 1rem;
+  color: #444;
+}
+
+.seventh-section .card-body,
+.eighth-section .card-body,
+.ninth-section .card-body,
+.tenth-section .card-body,
+.eleventh-section .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.seventh-section .card-body .btn,
+.eighth-section .card-body .btn,
+.ninth-section .card-body .btn,
+.tenth-section .card-body .btn,
+.eleventh-section .card-body .btn{
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+/* FAQs */
+
+
+
+
+/* ========== Responsive Styles ========== */
+
+/* For devices < 992px */
+@media (max-width: 992px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+  }
+
+  .menu a {
+    color: white;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+
+  .first-title {
+    font-size: 2rem;
+  }
+
+  .first-image {
+    clip-path: ellipse(100% 100% at 50% 50%);
+    margin-top: 20px;
+  }
+
+  .second-section span {
+    font-size: 0.9rem;
+  }
+
+  .second-section .d-flex {
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .third-section h3 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .third-section h4 {
+    font-size: 1.2rem;
+  }
+
+  .third-section p {
+    font-size: 0.97rem;
+    padding: 0 10px;
+  }
+
+  .third-section .table td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .fourth-img {
+    width: 120px;
+    height: 90px;
+  }
+
+  .fourth-container .caption {
+    font-size: 0.85rem;
+  }
+
+  .tour-card {
+    width: 48%;
+    margin-bottom: 1rem;
+  }
+
+  .sixth-img {
+    width: 120px;
+    height: 90px;
+  }
+
+  .sixth-container .caption {
+    font-size: 0.85rem;
+  }
+
+  .sixth-section h4 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .sixth-section .d-flex {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .seventh-section h4,
+  .eighth-section h4,
+  .ninth-section h4,
+  .tenth-section h4,
+  .eleventh-section h4 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .seventh-section .d-flex,
+  .eighth-section .d-flex,
+  .ninth-section .d-flex,
+  .tenth-section .d-flex,
+  .eleventh-section .d-flex {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .seventh-section .btn-outline-danger,
+  .eighth-section .btn-outline-danger,
+  .ninth-section .btn-outline-danger,
+  .tenth-section .btn-outline-danger,
+  .eleventh-section .btn-outline-danger {
+    align-self: flex-end;
+  }
+
+}
+
+/* For devices < 576px */
+@media (max-width: 576px) {
+  .first-title {
+    font-size: 1.6rem;
+  }
+
+  .first-text {
+    font-size: 0.95rem;
+  }
+
+  .tour-card {
+    width: 100%;
+  }
+
+  .thumb-img {
+    width: 100px;
+    height: 80px;
+  }
+
+  .seventh-section .card-text,
+  .eighth-section .card-text,
+  .ninth-section .card-text,
+  .tenth-section .card-text,
+  .eleventh-section .card-text {
+    font-size: 0.9rem;
+  }
+
+  .seventh-section .card-title,
+  .eighth-section .card-title,
+  .ninth-section .card-title,
+  .tenth-section .card-title,
+  .eleventh-section .card-title{
+    font-size: 1rem;
+  }
+
+  .seventh-section .card-img-top,
+  .eighth-section .card-img-top,
+  .ninth-section .card-img-top,
+  .tenth-section .card-img-top,
+  .eleventh-section .card-img-top{
+    height: 140px;
+  }
+}
+
+/* ************************************************************ */
+.footer-top {
+    background-color: #f9f9f9;
+    padding: 40px 20px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .footer-top h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .footer-top a {
+    display: block;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-decoration: none;
+  }
+
+  .footer-top a.orange {
+    color: #ff6600;
+  }
+
+  .footer-top a:hover {
+    color: #000;
+  }
+
+  .footer-mid {
+    background-color: #2a2f3a;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .footer-mid img {
+    height: 36px;
+    margin: 0 20px;
+  }
+
+  .footer-bottom {
+    background-color: #2a2f3a;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 0 10px;
+  }
+
+  .footer-bottom p, .footer-bottom a {
+    margin: 5px 0;
+    color: #ddd;
+    font-size: 14px;
+  }
+
+  .footer-bottom i {
+    color: #ff6600;
+    margin-right: 5px;
+  }
+
+  .social-icons a {
+    color: #fff;
+    margin: 0 8px;
+    border: 1px solid #ff6600;
+    border-radius: 50%;
+    padding: 6px 10px;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    background-color: #ff6600;
+  }
+
+  .footer-line {
+    border-top: 1px solid #444;
+    margin-top: 20px;
+  }
+
+  nav button a{
+  text-decoration: none;
+  color: white;
+  
+}
+.nav button{
+  background-color: darkred;
+ 
+}

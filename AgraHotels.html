@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Hotels</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="./assets/css/AgraHotelStyle.css">
+ 
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" data-aos="fade-down"
+    data-aos-duration="1000">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./images/Tour-removebg-preview (2).png" alt="Logo"
+          style="height: 35px; width: 140px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown position-relative">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Destinations</a>
+            <ul class="dropdown-menu wide-dropdown p-3">
+              <li class="d-flex justify-content-between">
+                <div class="dropdown-links">
+                  <a class="dropdown-item hover-preview"  href="./NorthSlide.html">North
+                    India</a>
+                  <a class="dropdown-item hover-preview"  href="./south.html">South India</a>
+                  <a class="dropdown-item hover-preview"  href="./eastindia.html">East
+                    India</a>
+                  <a class="dropdown-item hover-preview"  href="./westindia.html">West
+                    India</a>
+                  <a class="dropdown-item hover-preview"  href="./UnionTerritories.html">Union
+                    Territories</a>
+                </div>
+                <div class="dropdown-image-box ms-3">
+                  <img id="previewImage" src="./images/north.jpg" alt="Preview" class="img-fluid rounded shadow"
+                    style="width: 200px; height: 200px; object-fit: cover;">
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="./AgraHotels.html">Places To Stay</a></li>
+          <li class="nav-item dropdown position-relative">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Packages</a>
+            <ul class="dropdown-menu wide-dropdown p-3">
+              <li class="d-flex justify-content-between">
+                <div class="dropdown-links">
+                  <a class="dropdown-item hover-preview2" 
+                    href="./Wildlife.html">Wildlife</a>
+                  <a class="dropdown-item hover-preview2"
+                    href="./packages/AdventurePackage.html">Adventure Tour</a>
+                     <a class="dropdown-item hover-preview2"  href="./packageGoldenTriangle.html">Golden Triangle
+                    </a>
+                  <a class="dropdown-item hover-preview2"  href="./packages.html">Fixed
+                    Packages</a>
+                </div>
+                <div class="dropdown-image-box ms-3">
+                  <img id="previewImagePackages" src="./images/wildlife.jpg" alt="Preview"
+                    class="img-fluid rounded shadow" style="width: 200px; height: 200px; object-fit: cover;">
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./WeekendGetaways.html">WeekendGetways</a></li>
+          <button class=" btn btn-danger"><a href="./Booktour.html">Book Tour</a></button>
+        </ul>
+        <div>
+        
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ***************************************************************************** -->
+
+
+ <div class="container">
+    <h1>India Tour Package – Hotels by Region</h1>
+
+    <!-- NORTH INDIA -->
+    <section class="region">
+      <div class="region-header" onclick="toggleSection('north')">🇮🇳 North India Hotels</div>
+      <div class="hotel-region" id="north">
+        <div class="hotel-card">
+          <h2>🏨 Hotel Florence Inn – Delhi</h2>
+          <img src="https://cdn.pixabay.com/photo/2014/05/02/15/27/florence-336093_1280.jpg" />
+          <p>Located in Karol Bagh, Delhi. Boutique style with modern amenities, close to metro, great for first-time visitors.</p>
+        </div>
+        <div class="hotel-card">
+          <h2>🏨 Siris 18 – Agra</h2>
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noJYS-tA2BZNsUrTIrczXXLcKRVQsJGu9l8_i-3-9_rPS3R6Iiw83FZMRf1QgmktDvIIhDheqFueJh2ASKpcJXn0reGU3C7j_9LtWMwFxcMZqysyRkGBJuvqnjEjarlzrED5dWJ=s1360-w1360-h1020-rw" />
+          <p>Affordable stay near the Taj Mahal with clean AC rooms and friendly service. Great for monument access.</p>
+        </div>
+        <div class="hotel-card">
+          <h2>🏨 Nahargarh Haveli – Jaipur</h2>
+          <img src="https://lh3.googleusercontent.com/p/AF1QipOKAFOzLGZs52vBnjJ-G4pc-Cs95we0nsTCXm_w=s1360-w1360-h1020-rw" />
+          <p>Heritage-style haveli with traditional Rajasthani architecture and spacious, well-decorated rooms.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOUTH INDIA -->
+    <section class="region">
+      <div class="region-header" onclick="toggleSection('south')">🌴 South India Hotels</div>
+      <div class="hotel-region" id="south">
+        <div class="hotel-card">
+          <h2>🏨 Taj Malabar – Kochi</h2>
+          <img src="https://lh3.googleusercontent.com/p/AF1QipO_7TjDZ-fucKUQ907dxPltRXLNJ5IWiPyRV4WV=s1360-w1360-h1020-rw" />
+          <p>Luxury waterfront hotel in Kochi with colonial elegance and stunning harbor views.</p>
+        </div>
+        <div class="hotel-card">
+          <h2>🏨 Kumarakom Lake Resort – Kerala</h2>
+          <img src="https://lh3.googleusercontent.com/proxy/FpfH1-wdMvIUdZibZ_xZ1y4Jwz-0G1GhrTiXOMJl33hM-6g_vu4fMMc2DVOaxMnhlQnx-FR9jdLL9mTd1q15-cjamJOiWLpcljk5DSDae7yy15JuxotcVUIW-CUn0zxU3l7mgKZAvEUa0vD7E8IP8EUfFxrUrQ=s1360-w1360-h1020-rw" />
+          <p>Famous backwater resort with traditional villas, infinity pool, and Ayurveda wellness.</p>
+        </div>
+        <div class="hotel-card">
+          <h2>🏨 Taj Falaknuma Palace – Hyderabad</h2>
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/17181467.jpg?k=73b25a9cb3b5e18877cf578c8d146a1ba4ff213a6bf3801f4480a0337bac1b1f&o=" alt="">
+          <p>Former palace turned 5-star hotel with opulence, heritage, and royal service in Hyderabad.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EAST INDIA -->
+    <section class="region">
+      <div class="region-header" onclick="toggleSection('east')">🌄 East India Hotels</div>
+      <div class="hotel-region" id="east">
+        <div class="hotel-card">
+          <h2>🏨 JW Marriott – Kolkata</h2>
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/519403307.jpg?k=f0b5f969ab27c629a8528b5aab3b757ed2db8a6e15f62b846a6034c31323f355&o=" />
+          <p>Luxurious rooms, rooftop pool, spa, and one of the top picks in Eastern India.</p>
+        </div>
+        <div class="hotel-card">
+          <h2>🏨 Taj Chia Kutir – Darjeeling</h2>
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/338217467.jpg?k=ac438dfd02fd5080e5157164a74796dc412dde3e9fc90fc339c659e6b91b56a2&o=" />
+          <p>Tea estate luxury retreat with panoramic mountain views and elegant cottages.</p>
+        </div>
+        <div class="hotel-card">
+          <h2>🏨 Hyatt Place – Bodh Gaya</h2>
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/503260862.jpg?k=9900aaed27609a51589e80821be79573d6f3606c1de6388a8ee320119771c6bf&o=" />
+          <p>Modern and peaceful stay ideal for Buddhist pilgrimage routes in Bihar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEST INDIA -->
+    <section class="region">
+      <div class="region-header" onclick="toggleSection('west')">🌅 West India Hotels</div>
+      <div class="hotel-region" id="west">
+        <div class="hotel-card">
+          <h2>🏨 Taj Mahal Palace – Mumbai</h2>
+          <img src="https://cdn.pixabay.com/photo/2018/04/25/09/54/architecture-3349102_1280.jpg" />
+          <p>Iconic seafront hotel with world-class luxury, heritage, and Gateway of India views.</p>
+        </div>
+        <div class="hotel-card">
+          <h2>🏨 Alila Diwa – Goa</h2>
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/209954172.jpg?k=bb02c9a097546e9533855bcd6bfcf922f2a0e9535e057407e630c9460e1ddc0a&o=" />
+          <p>Modern tropical resort near the beach, known for excellent service and design.</p>
+        </div>
+        <div class="hotel-card">
+          <h2>🏨 Ahilya by the Sea – Goa</h2>
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/99517448.jpg?k=feef2ece7025211814b4f0b11440e55d28752e25d7356adff9a7c89237c22124&o=" />
+          <p>Secluded boutique stay on the edge of the sea, perfect for tranquility and luxury.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- ******************************************************* -->
+  <section class="first-section bg-light">
+    <div class="container">
+      <h1 class=" fw-bold mb-5">Hotels in Agra Near Taj Mahal</h1>
+      <div class="first-item">
+        <p>
+          Agra, a beautiful city located in the state of Uttar Pradesh, is an emblem of affluent historical past and architectural brilliance of the Mughal epoch. This magnificent city boasts one of the Seven Wonders of the World – the Taj Mahal. This monument is a symbol of love. Because of the several architecturally wonderful edifices, Agra attracts a horde of tourists round the year from all around the world. To cater to the staying needs of the guests, Agra encompasses an enticing list of hotels.
+          <br /><br />
+          Whether it is a five-star luxury hotel or a budget one, hotels in Agra render heart-warming amenities and services and make the sojourn relaxing and memorable. In addition, these hotels offer lip-smacking dining options that delight the taste buds of the guests. Whatever is the budget of the traveler, it is certain that he will find a perfect accommodation option in Agra.
+          <br /><br />
+          The travellers looking for five-star hotels in Agra can choose from properties like Amar Vilas Palace, Taj Gateway, Hotel Trident, etc. The major four-star hotels in the city are Hotel Marina, Hotel Howard Plaza and Hotel Mansingh Palace. The enticing list of three-star hotels in Agra encompasses options like Hotel Taj Vilas, Hotel Pushp Villa, Hotel Royal Residency, etc.
+          <br /><br />
+          Find the best-recommended hotels in Agra below. Choose the best hotels for you and submit the booking form for getting up to 40% discount on your preferred hotel.
+        </p>
+
+        <h3 style="color: darkgreen; font-weight: bold;">5 Star Hotels in Agra</h3>
+        
+          <div class="card-container" id="cardContainer"></div>
+
+        <h3 class="mt-5" style="color: darkgreen; font-weight: bold;">4 Star Hotels in Agra</h3>
+<div class="card-container" id="fourStarCardContainer"></div>
+
+ <h3 class="mt-5" style="color: darkgreen; font-weight: bold;">3 Star Hotels in Agra</h3>
+<div class="card-container" id="threeStarCardContainer"></div>
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <!-- Top Columns -->
+    <div class="footer-top container" data-aos="zoom-out" data-aos-duration="1000">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h6>COMPANY</h6>
+          <a href="#">About Us</a>
+          <a href="#">We Are Hiring</a>
+          <a href="#">TMI Reviews</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Tour My India Blog</a>
+        </div>
+        <div class="col-md-3 col-6">
+          <h6>PROPERTY TYPE</h6>
+          <a href="#">Hotels in India</a>
+          <a href="#">Beach Resorts</a>
+          <a href="#">Wildlife Resorts</a>
+          <a href="#">Heritage Hotels</a>
+          <a href="#">Luxury Hotels</a>
+          <a href="#">Luxury Villas</a>
+        </div>
+        <div class="col-md-3 col-6">
+          <h6>LEGAL POLICY</h6>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">We Are Hiring</a>
+          <a href="#" class="orange">Share Your Travel Experience</a>
+        </div>
+        <div class="col-md-3 col-6">
+          <h6>OTHER SERVICES</h6>
+          <a href="#">Destination Weddings</a>
+          <a href="#">MICE</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partner Logos -->
+    <div class="footer-mid" data-aos="zoom-out" data-aos-duration="1000">
+      <img src="https://www.tourmyindia.com/imagess/incridble.webp" alt="Incredible India">
+      <img src="https://www.tourmyindia.com/imagess/tigers.webp" alt="TOFTigers">
+      <img src="https://www.tourmyindia.com/imagess/iata.webp" alt="IATA">
+    </div>
+
+    <!-- Bottom Info -->
+    <div class="footer-bottom text-center" data-aos="zoom-out" data-aos-duration="1000">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <p><i class="fas fa-map-marker-alt"></i> C - 81C, Sector - 8, Noida - 201301</p>
+          </div>
+          <div class="col-md-4">
+            <p><i class="fas fa-phone"></i> +91-123-456789 / 99</p>
+          </div>
+          <div class="col-md-4">
+            <p><i class="fas fa-envelope"></i> info@imperialTrails.com</p>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <p><i class="fas fa-mobile-alt"></i> +91-1234567896 (WhatsApp)</p>
+          </div>
+          <div class="col-md-4">
+            <p><i class="fab fa-skype"></i> ImperialTrails</p>
+          </div>
+          <div class="col-md-4 social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-line"></div>
+        <p class="mt-3">Copyright ©2025, Imperial Trails Pvt. Ltd</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/Js/AgraHotels.js"></script>
+</body>
+</html>

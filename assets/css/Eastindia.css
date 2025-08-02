@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.logo img {
+  width: 50px;
+}
+.nav-links, .nav-icons {
+  display: flex;
+  gap: 25px;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a:hover {
+  color: #FF6600;
+}
+.wide-dropdown {
+width: 800px; /* increase as needed */
+height: 250px;
+}
+
+.dropdown-links {
+display: flex;
+flex-direction: column;
+flex: 1;
+}
+
+.dropdown-image-box {
+flex-shrink: 0;
+}
+
+.dropdown-menu {
+border-radius: 0.5rem;
+transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+background-color: #f0f0f0;
+}
+#package{
+    background-image: url("./../images/EastIndiaImages/india-1309206_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+}
+.package-heading
+{
+  text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    text-shadow: 0px 0px 30px #000;
+
+}
+.package-heading p{
+    font-size: 22px;
+     font-family: "Poppins", sans-serif;
+     font-weight: 300;
+    font-style: normal;
+   
+}
+.package-heading strong{
+    font-size: 62px;
+     font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.package-info div{
+    margin: 0px 0px 16px;
+    padding: 24px 0px 0px;
+    color: #38404f;
+}
+.package-info span{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+   
+}
+.package-section h1{
+    font-size: 38px;
+    font-family: "Poppins";
+     color: #38404f;
+    font-weight: bolder;
+    padding: 0px 0px 20px;
+    
+}
+.package-section h2{
+    font-size: 28px;
+    font-family: "Poppins";
+     color: #38404f;
+    font-weight: bolder;
+    padding: 0px 0px 20px;
+    
+}
+.package-section p{
+    font-size: 14px;
+    font-family: "Poppins";
+    margin: 0px 0px 15px;
+}
+
+.about h2{
+    font-family: sf_pro_displayheavy;
+font-size: 22px;
+font-weight: 700;
+line-height: 26px;
+color: rgb(59, 64, 75);
+}
+.about p{
+    font-family: SFProDisplay-Regular;
+font-size: 15px;
+font-weight: 400;
+line-height: 23px;
+color: rgb(98, 99, 124);
+}
+
+.about button{
+    padding: 10px;
+    border-radius: 50px;
+}
+.about button:hover{
+    background-color: #ff6612;
+    border: none;
+    color: #fff !important;
+}
+
+/* carasul */
+.carousel-container {
+      width: 90%;
+      overflow: hidden;
+      margin: 30px auto;
+      position: relative;
+    }
+
+    .carousel {
+      display: flex;
+      transition: scroll-left 0.3s ease-in-out;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card2 {
+      width: 25%; /* 4 cards per view */
+      flex-shrink: 0;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+      background: #f9f9f9;
+      border-radius: 10px;
+      margin: 0 5px;
+      border: none !important;
+      /* box-shadow: 0 0 5px rgba(0,0,0,0.1); */
+    }
+
+    .card2 img {
+      width: 100%;
+      
+    }
+   
+
+    .place-name {
+      font-weight: bold;
+      margin-top: 8px;
+      color: #ff6612;
+
+    }
+    .place-name button{
+        background: none;
+        border: 1px solid orangered;
+        border-radius: 50px;
+        padding: 10px;
+        font-weight: bold;
+        color: #ff6612;
+    }
+    .place-name button:hover{
+      background-color: #FF6600;
+      color: #fff;
+    }
+    .place-name a{
+        text-decoration: none;
+        color: #ff6612;
+        border: 1px solid orangered;
+        border-radius: 50px;
+        padding: 5px;
+    }
+
+    .package-info1 {
+      color: #555;
+      font-size: 14px;
+      font-weight: 500;
+      
+    }
+    #packages-background{
+        background-color: #fef9f4;
+    }
+.season{
+    padding: 0px 75px 0px 0px;
+} 
+.season  img{
+    margin: 10px;
+}
+.season h4{
+    padding: 0px 0px 5px;
+    font-family: Lato, sans-serif;
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+color: rgb(64, 62, 77);
+}   
+.season p{
+    font-family: Lato, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+color: rgb(64, 62, 77);
+}
+.travel h1{
+ font-family: clanotnews;
+font-size: 41px;
+font-weight: 400;
+line-height: 41px;
+color: rgb(57, 64, 72);
+}
+.travel-info p{
+    font-family: open_sansregular;
+font-size: 16px;
+font-weight: 400;
+line-height: 30px;
+color: rgb(74, 82, 88);
+}
+.travel-info h5{
+    font-family: open_sansbold;
+font-size: 16px;
+font-weight: 700;
+line-height: 22px;
+color: rgb(57, 64, 72);
+}
+.travel-info button{
+    font-family: clanotmedium;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 50px;
+    color: rgb(244, 92, 0);
+    background: none;
+    border: 1px solid #ff6612;
+    padding:  10px;
+    border-radius: 3rem
+}
+
+.travel-info button:hover{
+    border: 1px solid #ff6612;
+    background-color: #ff6612;
+    color: #fff;
+}
+.travel-pack h3{
+    font-family: clanotmedium;
+font-size: 16px;
+font-weight: 400;
+line-height: 31px;
+color: rgb(14, 1, 1);
+}
+.travel-pack img:hover{
+    transform: scale(1.08);
+    transition: 0.5s ease-in;
+}
+.travel-packages h1{
+    font-family: clanotmedium;
+font-size: 25px;
+font-weight: 400;
+line-height: 30px;
+color: rgb(57, 64, 72);
+}
+.travel-packages p{
+    font-family: open_sansregular;
+font-size: 16px;
+font-weight: 400;
+line-height: 30px;
+color: rgb(74, 82, 88);
+}
+.card h3{
+    font-family: SFProDisplay-Bold;
+font-size: 17px;
+font-weight: 700;
+line-height: 20px;
+color: rgb(62, 63, 84);
+}
+.card span{
+    font-family: Poppins, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: normal;
+color: rgb(0, 0, 0);
+}
+.footer-top {
+    background-color: #f9f9f9;
+    padding: 40px 20px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .footer-top h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .footer-top a {
+    display: block;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-decoration: none;
+  }
+
+  .footer-top a.orange {
+    color: #ff6600;
+  }
+
+  .footer-top a:hover {
+    color: #000;
+  }
+
+  .footer-mid {
+    background-color: #2a2f3a;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .footer-mid img {
+    height: 36px;
+    margin: 0 20px;
+  }
+
+  .footer-bottom {
+    background-color: #2a2f3a;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 0 10px;
+  }
+
+  .footer-bottom p, .footer-bottom a {
+    margin: 5px 0;
+    color: #ddd;
+    font-size: 14px;
+  }
+
+  .footer-bottom i {
+    color: #ff6600;
+    margin-right: 5px;
+  }
+
+  .social-icons a {
+    color: #fff;
+    margin: 0 8px;
+    border: 1px solid #ff6600;
+    border-radius: 50%;
+    padding: 6px 10px;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    background-color: #ff6600;
+  }
+
+  .footer-line {
+    border-top: 1px solid #444;
+    margin-top: 20px;
+  }
+  /* ***************************************************** */
+
+
+   @media (max-width: 1024px) {
+  .card2 {
+    width: 30%; /* 3 cards per row on tablets */
+  }
+
+  .package-info1 {
+    font-size: 12px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .card2 {
+    width: 45%; /* 2 cards per row on phones */
+  }
+
+  .package-info1 {
+    font-size: 13px;
+  }
+
+  .place-name {
+    font-size: 16px;
+  }
+}
+
+/* Extra Small screens (very small phones) */
+@media (max-width: 480px) {
+  .card2 {
+    width: 90%; /* 1 card per row on small phones */
+    margin: 10px auto;
+  }
+
+  .package-info1 {
+    font-size: 12px;
+  }
+
+  .place-name {
+    font-size: 14px;
+  }
+}
+/* ***************************************** */
+nav button a{
+  text-decoration: none;
+  color: white;
+  
+}
+.nav button{
+  background-color: darkred;
+ 
+}

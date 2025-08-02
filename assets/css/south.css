@@ -1,0 +1,445 @@
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .logo img {
+    width: 50px;
+  }
+  .nav-links, .nav-icons {
+    display: flex;
+    gap: 25px;
+  }
+  .nav-links li {
+    list-style: none;
+  }
+  .nav-links a:hover {
+    color: #FF6600;
+  }
+  .wide-dropdown {
+  width: 800px; /* increase as needed */
+  height: 250px;
+  }
+  
+  .dropdown-links {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  }
+  
+  .dropdown-image-box {
+  flex-shrink: 0;
+  }
+  
+  .dropdown-menu {
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+  background-color: #f0f0f0;
+  }
+
+:root {
+    --primary-color: #ff6612;
+    --text-dark: #333;
+    --text-light: #fff;
+    --text-muted: #666;
+    --bg-light: #fff;
+    --bg-dark: #212529;
+    --shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: var(--shadow);
+}
+
+/* Carousel */
+#keralaCarousel {
+    margin-bottom: 40px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 500px;
+}
+
+/* Hero Section */
+.img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/sunset-7133867_1280.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.img1 h1 {
+    font-size: 3rem;
+    color: var(--text-light);
+    font-weight: bold;
+}
+
+.img1 h4 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Section Headings */
+.section-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* Kerala Header Section */
+.kerala-header {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-muted);
+}
+
+.kerala-header a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.kerala-header a:hover {
+    text-decoration: underline;
+}
+.info-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    z-index: 1050;
+    box-shadow: 0 8px 24px rgba(0,0,0,.25);
+    animation: fadeIn .25s ease;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -60%); }
+    to   { opacity: 1; transform: translate(-50%, -50%); }
+  }
+  
+  .info-window img {
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+/* Feature Boxes */
+.keralaimg {
+    padding: 30px;
+    min-height: 400px;
+    box-shadow: var(--shadow);
+    border-radius: 12px;
+    background-color: var(--bg-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.keralaimg:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 20px;
+}
+
+.keralaimg h4 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.keralaimg p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-top: 10px;
+}
+
+/* Section Navigation Bar */
+.section-nav {
+    background-color: var(--bg-dark);
+    text-align: center;
+    padding: 15px 0;
+}
+
+.section-nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.section-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Travel Info Boxes */
+.hero-heading {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero-heading h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero-heading p {
+    font-size: 14px;
+    color: #ddd;
+    margin: 0;
+}
+
+.hero-heading img {
+    margin-right: 10px;
+}
+
+/* Bottom Description */
+.container p {
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+/* Cards */
+.card {
+    box-shadow: var(--shadow);
+    border: none;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+Buttons
+.btn-primary,
+.btn-success {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #cc4e00;
+    transform: scale(1.05);
+}
+
+.btn-success:hover {
+    transform: scale(1.05);
+}
+
+/* Modals */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.modal .header {
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-body {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.modal-footer button {
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.modal-dialog {
+      max-width: 500px;
+      margin: 1.75rem auto;
+    }
+    .modal-content {
+      border-radius: 10px;
+    }
+    .modal-header h3 {
+      margin: 0;
+    }
+    .btn {
+      min-width: 100px;
+    }
+/* Responsive */
+@media (max-width: 768px) {
+    .img1 h1 {
+        font-size: 2rem;
+    }
+
+    .keralaimg {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .section-heading {
+        font-size: 1.5rem;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
+.south a{
+    text-decoration: none;
+}
+.kerala-header h1{
+    color: #cc4e00;
+}
+.kerala-header p{
+    color: #000000;
+}
+/* ***************************************** */
+ .footer-top {
+    background-color: #f9f9f9;
+    padding: 40px 20px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .footer-top h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .footer-top a {
+    display: block;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-decoration: none;
+  }
+
+  .footer-top a.orange {
+    color: #ff6600;
+  }
+
+  .footer-top a:hover {
+    color: #000;
+  }
+
+  .footer-mid {
+    background-color: #2a2f3a;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .footer-mid img {
+    height: 36px;
+    margin: 0 20px;
+  }
+
+  .footer-bottom {
+    background-color: #2a2f3a;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 0 10px;
+  }
+
+  .footer-bottom p, .footer-bottom a {
+    margin: 5px 0;
+    color: #ddd;
+    font-size: 14px;
+  }
+
+  .footer-bottom i {
+    color: #ff6600;
+    margin-right: 5px;
+  }
+
+  .social-icons a {
+    color: #fff;
+    margin: 0 8px;
+    border: 1px solid #ff6600;
+    border-radius: 50%;
+    padding: 6px 10px;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    background-color: #ff6600;
+  }
+
+  .footer-line {
+    border-top: 1px solid #444;
+    margin-top: 20px;
+  }  
+  nav button a{
+  text-decoration: none;
+  color: white;
+  
+}
+.nav button{
+  background-color: darkred;
+ 
+}

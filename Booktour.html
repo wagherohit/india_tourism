@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>India Tour Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+    .form-container {
+      background: #fff;
+      padding: 25px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background: orangered;
+      color: white;
+      border: none;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Book Your India Tour</h2>
+    <form action="/submit-booking" method="POST"  onsubmit="showAlert(); return false;" id="bookingForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="region">Select Tour Region:</label>
+      <select id="region" name="region" required>
+        <option value="">-- Choose a Region --</option>
+        <option value="north">North India</option>
+        <option value="south">South India</option>
+        <option value="east">East India</option>
+        <option value="west">West India</option>
+      </select>
+
+      <label for="startdate">Preferred Start Date:</label>
+      <input type="date" id="startdate" name="startdate" required>
+
+      <label for="days">Number of Days:</label>
+      <input type="number" id="days" name="days" min="1" required>
+
+      <label for="notes">Special Requests / Notes:</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Any preferences or requests..."></textarea>
+
+      <button type="submit">Book Tour</button>
+    </form>
+  </div>
+
+  <script src="./assets/Js/booktour.js"></script>
+</body>
+</html>

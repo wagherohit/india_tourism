@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adventure Tour Packages</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .adventure-section {
+      padding: 60px 0;
+      background-color: #fff;
+      position: relative;
+    }
+
+    .adventure-section h1 span {
+      color: #ff5c00;
+    }
+
+    .adventure-content {
+      max-width: 650px;
+    }
+
+    .know-more {
+      display: inline-block;
+      margin-top: 15px;
+      color: #ff5c00;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid #ff5c00;
+      transition: all 0.3s ease;
+    }
+
+    .know-more:hover {
+      color: #000;
+      border-color: #000;
+    }
+
+    .adventure-img-wrapper {
+      position: relative;
+      clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 0);
+      overflow: hidden;
+      border-radius: 0 0 50% 50%;
+    }
+
+    .adventure-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    @media (min-width: 992px) {
+      .adventure-img-wrapper {
+        clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 0);
+        border-radius: 0 0 50% 50%;
+      }
+    }
+    .package-carousel .card {
+      border: none;
+      transition: transform 0.3s ease;
+    }
+
+    .package-carousel .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .package-carousel img {
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .package-carousel .duration {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      width: 3rem;
+      height: 3rem;
+      top: 40%;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(0.5);
+    }
+
+    .category-btn {
+      border-radius: 50px;
+      padding: 6px 18px;
+      font-weight: 500;
+      border: 1px solid #ddd;
+      background-color: white;
+      transition: all 0.3s;
+      margin: 6px 10px 10px 0;
+    }
+
+    .category-btn.active {
+      border-color: #ff5a00;
+      color: #ff5a00;
+    }
+
+    .tour-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .tour-card {
+      flex: 1 1 calc(20% - 20px);
+      min-width: 200px;
+    }
+
+    .tour-card img {
+      border-radius: 5px;
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+    }
+
+    .tour-card h6 {
+      font-weight: 600;
+      margin-top: 5px;
+    }
+
+    .tour-card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .tour-card {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .tour-card {
+        flex: 1 1 100%;
+      }
+    }
+    
+    #adventureCarousel {
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.adventure-card {
+  flex: 0 0 auto;
+  width: 300px;
+}
+
+.adventure-card .card {
+  height: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.adventure-card .card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    /* padding: 20px; */
+    background: #f7f7f7;
+}
+.footer-nav span {
+    margin: 0 15px;
+    color: #333;
+    font-weight: 500;
+}
+
+.footer-top {
+    background-color: #f9f9f9;
+    padding: 40px 20px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .footer-top h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .footer-top a {
+    display: block;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-decoration: none;
+  }
+
+  .footer-top a.orange {
+    color: #ff6600;
+  }
+
+  .footer-top a:hover {
+    color: #000;
+  }
+
+  .footer-mid {
+    background-color: #2a2f3a;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .footer-mid img {
+    height: 36px;
+    margin: 0 20px;
+  }
+
+  .footer-bottom {
+    background-color: #2a2f3a;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 0 10px;
+  }
+
+  .footer-bottom p, .footer-bottom a {
+    margin: 5px 0;
+    color: #ddd;
+    font-size: 14px;
+  }
+
+  .footer-bottom i {
+    color: #ff6600;
+    margin-right: 5px;
+  }
+
+  .social-icons a {
+    color: #fff;
+    margin: 0 8px;
+    border: 1px solid #ff6600;
+    border-radius: 50%;
+    padding: 6px 10px;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    background-color: #ff6600;
+  }
+
+  .footer-line {
+    border-top: 1px solid #444;
+    margin-top: 20px;
+  }
+    
+  </style>
+</head>
+<body>
+
+   
+
+
+  <section class="adventure-section container">
+    <div class="row align-items-center">
+      <!-- Text Content -->
+      <div class="col-lg-6">
+        <h1 class="fw-bold mb-3"><span>Adventure</span> Tour Packages</h1>
+        <div class="adventure-content">
+          <p>
+            Looking for a destination that satiates your thirst for adventure? Look no further,
+            as India offers you a plethora of adventure activities, with the experience promising
+            to be unparalleled.
+          </p>
+          <p>
+            India offers numerous opportunities to give you that ultimate adrenaline rush with
+            activities like trekking and mountaineering/peak climbing in the majestic Himalayas;
+            river rafting in the unbridled rivers; mountain biking and motor biking on some
+            challenging yet scenic trails; and jeep safari to rugged offbeat destinations.
+          </p>
+          <p>
+            We at Tour My India make adventure holidays in India memorable, and at the same time, safe.
+          </p>
+          <a href="#" class="know-more">Know More →</a>
+        </div>
+      </div>
+
+      <!-- Image Content -->
+      <div class="col-lg-6 mt-5 mt-lg-0">
+        <div class="adventure-img-wrapper">
+          <img src="./../image/t4.jpg" alt="Adventure Tour"
+            class="adventure-img img-fluid" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid my-5 px-5">
+    <h4 class="fw-bold mb-4">Best Selling Adventure Tour Packages</h4>
+  
+    <div id="packageCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner package-carousel">
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-2 col-6 mb-4">
+              <div class="card">
+                <img src="./../image/t5.jpg" class="card-img-top" alt="Snow Leopard Trek" />
+                <div class="card-body px-2">
+                  <p class="duration mb-1">12 Nights - 13 Days</p>
+                  <h6 class="card-title">Snow Leopard Trek</h6>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-2 col-6 mb-4">
+              <div class="card">
+                <img src="./../image/t1.jpg" class="card-img-top" alt="Ganges Trek" />
+                <div class="card-body px-2">
+                  <p class="duration mb-1">8 Nights - 9 Days</p>
+                  <h6 class="card-title">Sources Of Ganges Trek</h6>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-2 col-6 mb-4">
+              <div class="card">
+                <img src="./../image/t2.jpg" class="card-img-top" alt="Kuari Pass" />
+                <div class="card-body px-2">
+                  <p class="duration mb-1">8 Nights - 9 Days</p>
+                  <h6 class="card-title">Kuari Pass Trek</h6>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-2 col-6 mb-4">
+              <div class="card">
+                <img src="./../image/t3.jpg" class="card-img-top" alt="Chopta Trek" />
+                <div class="card-body px-2">
+                  <p class="duration mb-1">4 Nights - 5 Days</p>
+                  <h6 class="card-title">Chopta Chandrashila Trek</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-6 mb-4">
+                <div class="card">
+                  <img src="./../image/t4.jpg" class="card-img-top" alt="Kanchenjunga" />
+                  <div class="card-body px-2">
+                    <p class="duration mb-1">10 Nights - 11 Days</p>
+                    <h6 class="card-title">Kanchenjunga Base Camp Trek</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-6 mb-4">
+                  <div class="card">
+                    <img src="./../image/t6.jpg" class="card-img-top" alt="Ganges Trek" />
+                    <div class="card-body px-2">
+                      <p class="duration mb-1">8 Nights - 9 Days</p>
+                      <h6 class="card-title">Sources Of Ganges Trek</h6>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="row">
+            <!-- Card 5 -->
+            <div class="col-md-2 col-6 mb-4">
+              <div class="card">
+                <img src="./../image/t7.jpg" class="card-img-top" alt="Kanchenjunga" />
+                <div class="card-body px-2">
+                  <p class="duration mb-1">10 Nights - 11 Days</p>
+                  <h6 class="card-title">Kanchenjunga Base Camp Trek</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-6 mb-4">
+                <div class="card">
+                  <img src="./../image/t8.jpg" class="card-img-top" alt="Ganges Trek" />
+                  <div class="card-body px-2">
+                    <p class="duration mb-1">8 Nights - 9 Days</p>
+                    <h6 class="card-title">Sources Of Ganges Trek</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-md-2 col-6 mb-4">
+                <div class="card">
+                  <img src="./../image/t9.jpg" class="card-img-top" alt="Kuari Pass" />
+                  <div class="card-body px-2">
+                    <p class="duration mb-1">8 Nights - 9 Days</p>
+                    <h6 class="card-title">Kuari Pass Trek</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="col-md-2 col-6 mb-4">
+                <div class="card">
+                  <img src="./../image/t10.jpg" class="card-img-top" alt="Chopta Trek" />
+                  <div class="card-body px-2">
+                    <p class="duration mb-1">4 Nights - 5 Days</p>
+                    <h6 class="card-title">Chopta Chandrashila Trek</h6>
+                  </div>
+                </div>
+              </div>
+            <!-- Add more cards if needed -->
+            <div class="col-md-2 col-6 mb-4">
+                <div class="card">
+                  <img src="./../image/t2.jpg" class="card-img-top" alt="Kuari Pass" />
+                  <div class="card-body px-2">
+                    <p class="duration mb-1">8 Nights - 9 Days</p>
+                    <h6 class="card-title">Kuari Pass Trek</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="col-md-2 col-6 mb-4">
+                <div class="card">
+                  <img src="./../image/t3.jpg" class="card-img-top" alt="Chopta Trek" />
+                  <div class="card-body px-2">
+                    <p class="duration mb-1">4 Nights - 5 Days</p>
+                    <h6 class="card-title">Chopta Chandrashila Trek</h6>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        
+      </div>
+  
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#packageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#packageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <section class="container my-5">
+    <h4 class="fw-bold mb-4">Popular Adventure Activities to Do in India</h4>
+    <div class="position-relative">
+      <div class="d-flex overflow-hidden" id="adventureCarousel" style="scroll-behavior: smooth;">
+        <!-- Cards will be injected here -->
+      </div>
+  
+      <!-- Arrows -->
+      <button class="btn btn-light position-absolute top-50 start-0 translate-middle-y shadow" id="prevBtn">←</button>
+      <button class="btn btn-light position-absolute top-50 end-0 translate-middle-y shadow" id="nextBtn">→</button>
+    </div>
+  </section>
+
+  <footer>
+    <!-- Top Columns -->
+    <div class="footer-top container"  data-aos="zoom-out" data-aos-duration="1000">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h6>COMPANY</h6>
+          <a href="#">About Us</a>
+          <a href="#">We Are Hiring</a>
+          <a href="#">TMI Reviews</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Tour My India Blog</a>
+        </div>
+        <div class="col-md-3 col-6">
+          <h6>PROPERTY TYPE</h6>
+          <a href="#">Hotels in India</a>
+          <a href="#">Beach Resorts</a>
+          <a href="#">Wildlife Resorts</a>
+          <a href="#">Heritage Hotels</a>
+          <a href="#">Luxury Hotels</a>
+          <a href="#">Luxury Villas</a>
+        </div>
+        <div class="col-md-3 col-6">
+          <h6>LEGAL POLICY</h6>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">We Are Hiring</a>
+          <a href="#" class="orange">Share Your Travel Experience</a>
+        </div>
+        <div class="col-md-3 col-6">
+          <h6>OTHER SERVICES</h6>
+          <a href="#">Destination Weddings</a>
+          <a href="#">MICE</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Partner Logos -->
+    <div class="footer-mid"  data-aos="zoom-out" data-aos-duration="1000">
+      <img src="https://www.tourmyindia.com/imagess/incridble.webp" alt="Incredible India">
+      <img src="https://www.tourmyindia.com/imagess/tigers.webp" alt="TOFTigers">
+      <img src="https://www.tourmyindia.com/imagess/iata.webp" alt="IATA">
+    </div>
+  
+    <!-- Bottom Info -->
+    <div class="footer-bottom text-center"  data-aos="zoom-out" data-aos-duration="1000">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <p><i class="fas fa-map-marker-alt"></i> C - 81C, Sector - 8, Noida - 201301</p>
+          </div>
+          <div class="col-md-4">
+            <p><i class="fas fa-phone"></i> +91-120-4052615 / 99</p>
+          </div>
+          <div class="col-md-4">
+            <p><i class="fas fa-envelope"></i> info@tourmyindia.com</p>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <p><i class="fas fa-mobile-alt"></i> +91-9212777225 (WhatsApp)</p>
+          </div>
+          <div class="col-md-4">
+            <p><i class="fab fa-skype"></i> tourmyindiadelhi</p>
+          </div>
+          <div class="col-md-4 social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+  
+        <div class="footer-line"></div>
+        <p class="mt-3">Copyright ©2025, Tour My India Pvt. Ltd</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./../js/script.js"></script>
+  <script src="./../js/adventure.js"></script>
+</body>
+</html>

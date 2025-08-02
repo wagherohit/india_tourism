@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imperial Trails</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style/service.css">
+  <link rel="stylesheet" href="./style/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <span></span><span></span><span></span>
+    </div>
+    <h2 class="loading-text">Loading...</h2>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" data-aos="fade-down"
+    data-aos-duration="1000">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./images/Tour-removebg-preview (2).png" alt="Logo"
+          style="height: 35px; width: 140px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown position-relative">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Destinations</a>
+            <ul class="dropdown-menu wide-dropdown p-3">
+              <li class="d-flex justify-content-between">
+                <div class="dropdown-links">
+                  <a class="dropdown-item hover-preview" data-img="./images/1.jpg" href="./NorthSlide.html">North
+                    India</a>
+                  <a class="dropdown-item hover-preview" data-img="./images/2.jpg" href="./south.html">South India</a>
+                  <a class="dropdown-item hover-preview" data-img="./images/3.jpg" href="./eastindia.html">East
+                    India</a>
+                  <a class="dropdown-item hover-preview" data-img="./images/4.jpg" href="./westindia.html">West
+                    India</a>
+                  <a class="dropdown-item hover-preview" data-img="./images/1.jpg" href="./UnionTerritories.html">Union
+                    Territories</a>
+                </div>
+                <div class="dropdown-image-box ms-3">
+                  <img id="previewImage" src="./images/north.jpg" alt="Preview" class="img-fluid rounded shadow"
+                    style="width: 200px; height: 200px; object-fit: cover;">
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="./AgraHotels.html">Places To Stay</a></li>
+          <li class="nav-item dropdown position-relative">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Packages</a>
+            <ul class="dropdown-menu wide-dropdown p-3">
+              <li class="d-flex justify-content-between">
+                <div class="dropdown-links">
+                  <a class="dropdown-item hover-preview2" data-img="./images/wild.jpg"
+                    href="./Wildlife.html">Wildlife</a>
+                  <a class="dropdown-item hover-preview2" data-img="./images/trek.jpg"
+                    href="./packages/AdventurePackage.html">Adventure Tour</a>
+                     <a class="dropdown-item hover-preview2" data-img="./images/fix.jpg" href="./packageGoldenTriangle.html">Golden Triangle
+                    </a>
+                  <a class="dropdown-item hover-preview2" data-img="./images/fix.jpg" href="./packages.html">Fixed
+                    Packages</a>
+                </div>
+                <div class="dropdown-image-box ms-3">
+                  <img id="previewImagePackages" src="./images/wildlife.jpg" alt="Preview"
+                    class="img-fluid rounded shadow" style="width: 200px; height: 200px; object-fit: cover;">
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./WeekendGetaways.html">WeekendGetways</a></li>
+          <button class=" btn btn-danger"><a href="./Booktour.html">Book Tour</a></button>
+        </ul>
+        <div>
+        
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section d-flex flex-column flex-md-row " style="background-color: #fff;">
+    <!-- Image on Left -->
+    <div class="order-1 order-md-0 col-md-6 d-flex align-items-center justify-content-center p-2" data-aos="fade-right"
+      data-aos-duration="1000">
+      <div class="card w-60 h-60 shadow ">
+        <img id="image" src="./assets/images/travel_resized_413x622.jpg"
+        class="card-img-top bg-white" 
+        alt="Hero Image"
+       
+        style="width: 400px; height: 400px;">
+        <div class="card-img-overlay d-flex align-items-end p-4">
+          <h2 class="text-white bg-dark bg-opacity-50 p-2 rounded">Maharaja Express</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content on Right -->
+    <div class="hero-content order-0 order-md-1 col-md-6 d-flex flex-column justify-content-center p-5">
+      <h1 class="fw-bold" data-aos="fade-left" data-aos-duration="1000" style="color: black;">Let us plan you a perfect <span
+          style="color: #ff9f1c;">India Holiday</span></h1>
+      <p class="text-muted" data-aos="fade-left" data-aos-duration="1000">Tour My India, one of the best travel agencies
+        in India, offers custom-crafted tour packages for unforgettable holiday experiences across the country.</p>
+      <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-inner" id="carouselContentEdit">
+
+          <!-- First Slide -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card h-100 text-center p-3">
+                  <h6 class="fw-bold">Wildlife</h6>
+                  <small>70+ Packages</small>
+                  <img src="https://www.tourmyindia.com/imagess/wildlife.webp" class="img-fluid mt-2" alt="Wildlife">
+                </div>
+              </div>
+              <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card h-100 text-center p-3">
+                  <h6 class="fw-bold">Heritage</h6>
+                  <small>25+ Packages</small>
+                  <img src="https://www.tourmyindia.com/imagess/heritage.webp" class="img-fluid mt-2" alt="Heritage">
+                </div>
+              </div>
+              <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card h-100 text-center p-3">
+                  <h6 class="fw-bold">Trekking</h6>
+                  <small>70+ Packages</small>
+                  <img src="https://www.tourmyindia.com/imagess/trekking.webp" class="img-fluid mt-2" alt="Trekking">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Slide -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card h-100 text-center p-3">
+                  <h6 class="fw-bold">Beaches</h6>
+                  <small>40+ Packages</small>
+                  <img src="https://www.tourmyindia.com/imagess/beach01.webp" class="img-fluid mt-2" alt="Beaches">
+                </div>
+              </div>
+              <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card h-100 text-center p-3">
+                  <h6 class="fw-bold">Pilgrimage</h6>
+                  <small>35+ Packages</small>
+                  <img src="https://www.tourmyindia.com/imagess/pilgrim.webp" class="img-fluid mt-2" alt="Pilgrimage">
+                </div>
+              </div>
+              <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card h-100 text-center p-3">
+                  <h6 class="fw-bold">Luxury</h6>
+                  <small>15+ Packages</small>
+                  <img src="https://www.tourmyindia.com/imagess/hill.webp" class="img-fluid mt-2" alt="Luxury">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Prev/Next Buttons Below Cards -->
+        <div class="d-flex justify-content-center gap-3 mt-4" data-aos="fade-up" data-aos-duration="1000">
+          <button class="btn btn-outline-primary px-4 py-2 rounded-pill" type="button"
+            data-bs-target="#categoryCarousel" data-bs-slide="prev">
+            <i class="fas fa-arrow-left me-2"></i>
+          </button>
+          <button class="btn btn-outline-success px-4 py-2 rounded-pill" type="button"
+            data-bs-target="#categoryCarousel" data-bs-slide="next">
+            <i class="fas fa-arrow-right ms-2"></i>
+          </button>
+        </div>
+      </div>
+      <div class="d-flex align-items-center mt-3" data-aos="fade-up" data-aos-duration="1000">
+        
+        <button class="btn btn-outline-danger me-3"><i class="bi bi-telephone"></i> +91-1234567896</button>
+        <button class="btn btn-warning text-white">Plan Your Trip</button>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Explore Top Destinations by Region -->
+  <section class="container py-5">
+    <h2 class="fw-bold mb-4 " data-aos="fade-right" data-aos-duration="1000">Explore Top Destinations by Region</h2>
+
+    <!-- Region Tabs -->
+    <ul class="nav nav-tabs justify-content-start mb-4" id="regionTabs" role="tablist">
+      <li class="nav-item" role="presentation" data-aos="fade-right" data-aos-duration="1000">
+        <button class="nav-link active" id="north-tab" data-region="north" type="button">North India</button>
+      </li>
+      <li class="nav-item" role="presentation" data-aos="fade-right" data-aos-duration="1200">
+        <button class="nav-link" id="south-tab" data-region="south" type="button">South India</button>
+      </li>
+      <li class="nav-item" role="presentation" data-aos="fade-right" data-aos-duration="1300">
+        <button class="nav-link" id="east-tab" data-region="east" type="button">East India</button>
+      </li>
+      <li class="nav-item" role="presentation" data-aos="fade-right" data-aos-duration="1400">
+        <button class="nav-link" id="west-tab" data-region="west" type="button">West India</button>
+      </li>
+      <li class="nav-item" role="presentation" data-aos="fade-right" data-aos-duration="1500">
+        <button class="nav-link" id="central-tab" data-region="central" type="button">Central India</button>
+      </li>
+    </ul>
+
+    <div class="container py-5">
+      <h2 class="text-center fw-bold mb-4">Explore Top Destinations</h2>
+      <div class="custom-grid" id="destinationGrid" data-aos="zoom-out" data-aos-duration="1000"></div>
+    </div>
+
+
+    <!-- Placeholder tabs -->
+
+    </div>
+  </section>
+
+  <!-- Top Trending Destinations -->
+  <section class="container py-5">
+    <h2 class="fw-bold mb-4">Top Trending Destinations</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4" id="destinationContainer"
+      data-aos="zoom-out" data-aos-duration="1000"></div>
+    <div id="destinationCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="zoom-out"
+      data-aos-duration="1000">
+      <div class="carousel-inner" id="carouselContent"></div>
+
+      <!-- Prev & Next buttons BELOW -->
+      <div class="d-flex justify-content-center gap-3 mt-4">
+        <button class="btn btn-outline-primary px-4 rounded-pill" data-aos="zoom-out" data-aos-duration="1000"
+          type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev">
+          <i class="fas fa-arrow-left me-2"></i>
+        </button>
+        <button class="btn btn-outline-success px-4 rounded-pill" data-aos="zoom-out" data-aos-duration="1000"
+          type="button" data-bs-target="#destinationCarousel" data-bs-slide="next">
+          <i class="fas fa-arrow-right ms-2"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Destination Wedding Section -->
+  <section class="hero-section d-flex flex-column flex-md-row align-items-center justify-content-between p-4"
+    id="heroSection">
+    <!-- Left Text Box -->
+
+    <div class="hero-text-box pe-md-5 mb-4 mb-md-0" id="textBox" data-aos="fade-right" data-aos-duration="1000">
+      <h2 id="heading">Destination Weddings</h2>
+      <small id="subheading">INDIA WEDDING PLANNER</small>
+      <p class="mt-3" id="description">Design Your Fairy-Tale Wedding In Dreamlike Locations.</p>
+      <a href="#" class="btn btn-learn mt-2">Learn More</a>
+    </div>
+
+    <!-- Right Carousel -->
+    <div class="text-center">
+      <div class="services-box d-flex overflow-auto" id="carouselBox" data-aos="fade-left" data-aos-duration="1000"
+        style="gap: 1rem; max-width: 500px;">
+        <!-- Cards injected by JS -->
+      </div>
+
+      <div class="carousel-nav mt-3">
+        <button class="btn btn-outline-dark me-2" id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+        <button class="btn btn-outline-dark" id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Destination Wedding Section -->
+  <!-- <section class="hero-section">
+    <div class="hero-text-box">
+      <h2>Destination Weddings</h2>
+      <small>INDIA WEDDING PLANNER</small>
+      <p class="mt-3">Design Your Fairy-Tale Wedding In Dreamlike Locations.</p>
+      <a href="#" class="btn btn-learn">Learn More</a>
+    </div>
+    <div>
+      <div class="services-box">
+        <div class="service-card active">
+          <i class="fas fa-map-marker-alt"></i>
+          <h6 class="mt-2">DESTINATION<br>WEDDINGS</h6>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-heartbeat"></i>
+          <h6 class="mt-2">MEDICAL<br>TOURISM</h6>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-mortar-pestle"></i>
+          <h6 class="mt-2">AYURVEDA<br>TOURISM</h6>
+        </div>
+      </div>
+      <div class="carousel-nav mt-4 text-center">
+        <button class="btn"><i class="fas fa-arrow-left"></i></button>
+        <button class="btn"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Top Weekend Destinations Section -->
+  <section class="section-wrapper container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4" data-aos="zoom-out" data-aos-duration="1000">
+      <h2 class="section-title">Top Weekend Destinations</h2>
+      <a href="#" class="text-primary fw-semibold">View All Tours <i class="fas fa-chevron-right"></i></a>
+    </div>
+
+    <!-- Carousel Wrapper -->
+    <div class="position-relative" data-aos="zoom-out" data-aos-duration="1000">
+      <div class="carousel-wrapper overflow-hidden">
+        <div class="row flex-nowrap g-4" id="carouselRow" style="transition: transform 0.5s ease;">
+          <!-- JS injects content -->
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <div class="mt-4 text-center" data-aos="zoom-out" data-aos-duration="1000">
+        <button class="btn btn-outline-dark me-2" id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+        <button class="btn btn-outline-dark" id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top India Tourism Experiences Section -->
+  <!-- <section class="section-wrapper">
+    <div class="d-flex justify-content-start align-items-center mb-4">
+      <h2 class="section-title">Top India Tourism Experiences</h2>
+      <a href="#" class="text-primary fw-semibold">View All Tours <i class="fas fa-chevron-right"></i></a>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card-item">
+          <img src="https://www.tourmyindia.com/blog/wp-content/uploads/2017/09/Wildlife-Tourism.jpg" class="img-fluid w-100" alt="Wildlife" />
+          <p>Travel Guide</p>
+          <h5>Wildlife Tourism in India</h5>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card-item">
+          <img src="https://www.tourmyindia.com/blog/wp-content/uploads/2017/09/Hill-Stations.jpg" class="img-fluid w-100" alt="Hill Stations" />
+          <p>Travel Guide</p>
+          <h5>Hill Stations in India</h5>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card-item">
+          <img src="https://www.tourmyindia.com/blog/wp-content/uploads/2017/09/Beaches-in-India.jpg" class="img-fluid w-100" alt="Beaches" />
+          <p>Travel Guide</p>
+          <h5>Popular Beaches in India</h5>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card-item">
+          <img src="https://www.tourmyindia.com/blog/wp-content/uploads/2017/09/Heritage-Tourism.jpg" class="img-fluid w-100" alt="Heritage" />
+          <p>Travel Guide</p>
+          <h5>Heritage Tourism in India</h5>
+        </div>
+      </div>
+    </div>
+    <div class="mt-4 text-center">
+      <span class="arrow-btn"><i class="fas fa-arrow-left"></i></span>
+      <span class="arrow-btn"><i class="fas fa-arrow-right"></i></span>
+    </div>
+  </section> -->
+
+  <!-- Why Choose Us Section -->
+  <section class="section-wrapper" data-aos="zoom-out" data-aos-duration="1000">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Why Choose Us ?</h2>
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-12 col-md-6 col-lg-3 d-flex">
+          <div class="choose-card p-4 text-center rounded-3" style="background-color: #eef3ec;">
+            <div class="mb-3 fs-2 text-dark">
+              <i class="fa-regular fa-thumbs-up"></i>
+            </div>
+            <h5 class="fw-bold">20+ Year Experience</h5>
+            <p class="mt-2 small">
+              Boasting over two decades in the tourism and hospitality industry, Tour My India has amassed invaluable
+              experience that sets us apart.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 d-flex">
+          <div class="choose-card p-4 text-center rounded-3" style="background-color: #eef5f8;">
+            <div class="mb-3 fs-2 text-dark">
+              <i class="fa-regular fa-thumbs-up"></i>
+            </div>
+            <h5 class="fw-bold">A Team of Experts</h5>
+            <p class="mt-2 small">
+              Our experienced team at Tour My India is more than just proficient; they are destination experts for every
+              location within the mesmerizing landscape of India.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 d-flex">
+          <div class="choose-card p-4 text-center rounded-3" style="background-color: #fff0ea;">
+            <div class="mb-3 fs-2 text-dark">
+              <i class="fa-regular fa-thumbs-up"></i>
+            </div>
+            <h5 class="fw-bold">Verified Hotels</h5>
+            <p class="mt-2 small">
+              We offer a meticulously selected and verified list of high-grade hotels. Our partners consistently deliver
+              top-notch service.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 d-flex">
+          <div class="choose-card p-4 text-center rounded-3" style="background-color: #fff6e8;">
+            <div class="mb-3 fs-2 text-dark">
+              <i class="fa-regular fa-thumbs-up"></i>
+            </div>
+            <h5 class="fw-bold">Value for Money Tours</h5>
+            <p class="mt-2 small">
+              With Tour My India, your vacation is not just about sightseeing; it's about creating memories that last a
+              lifetime.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container about-section">
+    <div class="row align-items-center">
+      <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1000">
+        <h2 class="about-title mb-4">About<br>Incredible India</h2>
+        <p class="about-text">
+          Interesting and Intriguing, India offers incredible holiday experiences through its cultural, topography, and
+          wildlife diversity.
+          With these amazing and unique experiences, this south Asian country conveniently finds its way into the world
+          tourism map as one of
+          the finest destinations for a holistic vacation. India establishes its identity as the country of
+          architectural masterpieces, making
+          it an ideal travel destination to plan a heritage tour in the world. While Taj Mahal makes for the major draw
+          on an India tour, there
+          are a plethora of monuments and edifices in every India travel guide displaying the fine architecture and
+          grandiose of different eras
+          in the country.
+        </p>
+        <p class="about-text">
+          The diverse Indian topography adorned with the impressive Himalayas; long stretches of coastline; expansive
+          hot, cold and white salt
+          deserts; dense forests; alpine meadows and lakes; and scenic waterfalls pique the tourists’ interest. Along
+          with the best nature
+          sightseeing tours, India offers an opportunity to visitors to have a little adventure of their own. The
+          numerous spell-binding and
+          less-trodden trails give trekking tour opportunities in South Asia unlike any other.
+        </p>
+      </div>
+      <div class="col-lg-5 mt-4 mt-lg-0" data-aos="fade-left" data-aos-duration="1000">
+        <img id="aboutImage" src="https://www.tourmyindia.com/imgnew/varanasi-tour1.jpg" alt="Incredible India"
+          class="about-img shadow" />
+      </div>
+    </div>
+  </div>
+
+  <div class="container info-section">
+    <div class="row g-4">
+      <!-- India Climate & Season -->
+      <div class="col-md-6">
+        <div class="info-card" data-aos="fade-right" data-aos-duration="1000">
+          <div class="top-accent"></div>
+          <h4 class="mt-3">India Climate & Season</h4>
+          <p>
+            India experiences a diverse climate and weather conditions due to its vast size and geographical features.
+            The country is characterized by five main seasons: Spring, Summer, Monsoon, Autumn, and Winter. The Summer
+            season, from April to mid-June, brings scorching temperatures, especially in the northern plains. The
+            Monsoon, from mid-June to September, brings heavy rainfall, crucial for agriculture. Winter, from November
+            to February, varies from mild to severe cold, with snowfall in some regions. Autumn and Spring provide
+            pleasant weather with moderate temperatures. India's climate is influenced by the Himalayas, oceans, and
+            geographical variations, resulting in a rich and varied weather pattern.
+          </p>
+          <div class="btn-group-custom">
+            <button class="btn btn-season active">Summer</button>
+            <button class="btn btn-season">Monsoon</button>
+            <button class="btn btn-season">Winter</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visa Information -->
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+        <div class="info-card">
+          <div class="top-accent"></div>
+          <h4 class="mt-3">Visa Information</h4>
+          <p>
+            Obtaining a visa for India is an essential step for foreign travelers planning to visit the country. India
+            offers various visa categories, including tourist visas, business visas, and e-visas. The tourist visa
+            allows visitors to explore India's rich cultural heritage, historical sites, and natural beauty. The e-visa
+            is a convenient option that allows travelers to apply for their visa online, streamlining the process and
+            reducing the wait time.
+            To apply for an India visa, travelers need to submit necessary documents, such as a valid passport, travel
+            itinerary, and recent photographs. Planning ahead and adhering to the application guidelines ensure a smooth
+            visa process for a memorable trip to India. For the latest information about getting a visa for India, visit
+            the official website at <a href="https://indianvisaonline.gov.in/" class="info-link"
+              target="_blank">https://indianvisaonline.gov.in/</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container travel-section">
+    <!-- Travel Information Header -->
+    <h2 class="section-title">Travel Information</h2>
+
+    <!-- Best Time To Visit In India -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Taj-Mahal.jpg/640px-Taj-Mahal.jpg"
+          alt="Taj Mahal" class="info-image">
+      </div>
+      <div class="col-md-8" data-aos="fade-left" data-aos-duration="1000">
+        <h4 class="info-title">Best Time To Visit In India</h4>
+        <p class="info-text">
+          The best time to visit India for holidays depends on the type of experience you seek. The tourism season in
+          India varies across regions due to its diverse climate. The peak tourism season in India starts from September
+          to June. For wildlife enthusiasts, winter is ideal as national parks are open, and wildlife sightings are
+          abundant. Hill stations are most enjoyable during summer to escape the scorching heat of the plains. For
+          trekking and hiking adventures, winter, monsoon, autumn, and spring offer pleasant weather. Plan your trip
+          according to your preferences, and you'll discover India's incredible beauty and cultural richness, making it
+          an unforgettable holiday destination. September to April can be considered an ideal time to explore India for
+          tourism holidays.
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- How to Get Around in India -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+        <img src="./assets/images/meghalaya-view-point-shillong-hillseast-600nw-2503238471.webp" alt="Bus in India"
+          class="info-image">
+      </div>
+      <div class="col-md-8" data-aos="fade-left" data-aos-duration="1000">
+        <h4 class="info-title">How to get around in India?</h4>
+        <p class="info-text">
+          Traveling to India is a seamless experience, thanks to its well-developed transportation network. The country
+          is easily accessible through various modes of transport, ensuring a smooth entry for tourists from around the
+          world. India boasts an extensive road connectivity, making it convenient for travelers to explore different
+          regions. The rail network, with an extensive network of trains, offers a scenic and comfortable journey to
+          various destinations.
+        </p>
+        <a href="#" class="read-more">Read More &nbsp; &rarr;</a>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Travel Tips -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+        <img src="./images/andra.jpg" alt="Travel Tips" class="info-image">
+      </div>
+      <div class="col-md-8" data-aos="fade-left" data-aos-duration="1000">
+        <h4 class="info-title">Must-Follow Travel Tips for Exploring India</h4>
+        <p class="info-text">
+          When visiting India, it's essential to check out important travel tips to ensure a smooth and enjoyable trip.
+          Follow recommended guidelines for packing, cultural respect, local transportation, and staying safe. These
+          tips will help you make the most of your India tour and have a memorable experience.
+        </p>
+        <a href="#" class="read-more">Read More &nbsp; &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="discover-section container py-5" data-aos="zoom-out" data-aos-duration="1000">
+    <h2 class="discover-title mb-4">Discovering India</h2>
+
+    <!-- Filter Buttons -->
+    <div class="discover-tabs mb-4">
+      <button class="btn btn-primary filter-btn" data-filter="regions">Explore Regions</button>
+      <button class="btn btn-outline-secondary filter-btn" data-filter="things">Top Things To Do</button>
+      <button class="btn btn-outline-secondary filter-btn" data-filter="places">Best Places To Visit</button>
+      <button class="btn btn-outline-secondary filter-btn" data-filter="arts">Arts, Culture & History</button>
+      <button class="btn btn-outline-secondary filter-btn" data-filter="fairs">Fairs & Festivals</button>
+      <button class="btn btn-outline-secondary filter-btn" data-filter="museum">Museum In India</button>
+    </div>
+
+    <div class="row">
+      <!-- Left Region List -->
+      <div class="col-md-3 region-list" id="regionList"></div>
+
+      <!-- Middle Text Content -->
+      <div class="col-md-6">
+        <p class="region-description" id="description1"></p>
+        <p class="region-description" id="description2"></p>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-md-3">
+        <img id="regionImage" src="" alt="Discover India" class="discover-img shadow w-100" />
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-navbar py-1 bg-white shadow-sm">
+    <div class="container d-flex justify-content-center gap-5">
+      <!-- India Tours -->
+      <div class="text-center">
+        <img src="./image/indian-map.svg" alt="India Tours" width="36" height="36">
+        <p class="mb-0 mt-1 small fw-semibold text-dark">India Tours</p>
+      </div>
+
+      <!-- International Tours -->
+      <div class="text-center">
+        <img src="./image/travel_13356590.png" alt="International Tours" width="36" height="36">
+        <p class="mb-0 mt-1 small fw-semibold text-dark">International Tours</p>
+      </div>
+
+      <!-- Destination Wedding -->
+      <div class="text-center">
+        <img src="./image/location_17270392.png" alt="Destination Wedding" width="36" height="36">
+        <p class="mb-0 mt-1 small fw-semibold text-dark">Destination Wedding</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <!-- Top Columns -->
+    <div class="footer-top container" data-aos="zoom-out" data-aos-duration="1000">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h6>COMPANY</h6>
+          <a href="#">About Us</a>
+          <a href="#">We Are Hiring</a>
+          <a href="#">TMI Reviews</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Tour My India Blog</a>
+        </div>
+        <div class="col-md-3 col-6">
+          <h6>PROPERTY TYPE</h6>
+          <a href="#">Hotels in India</a>
+          <a href="#">Beach Resorts</a>
+          <a href="#">Wildlife Resorts</a>
+          <a href="#">Heritage Hotels</a>
+          <a href="#">Luxury Hotels</a>
+          <a href="#">Luxury Villas</a>
+        </div>
+        <div class="col-md-3 col-6">
+          <h6>LEGAL POLICY</h6>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">We Are Hiring</a>
+          <a href="#" class="orange">Share Your Travel Experience</a>
+        </div>
+        <div class="col-md-3 col-6">
+          <h6>OTHER SERVICES</h6>
+          <a href="#">Destination Weddings</a>
+          <a href="#">MICE</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partner Logos -->
+    <div class="footer-mid" data-aos="zoom-out" data-aos-duration="1000">
+      <img src="https://www.tourmyindia.com/imagess/incridble.webp" alt="Incredible India">
+      <img src="https://www.tourmyindia.com/imagess/tigers.webp" alt="TOFTigers">
+      <img src="https://www.tourmyindia.com/imagess/iata.webp" alt="IATA">
+    </div>
+
+    <!-- Bottom Info -->
+    <div class="footer-bottom text-center" data-aos="zoom-out" data-aos-duration="1000">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <p><i class="fas fa-map-marker-alt"></i> C - 81C, Sector - 8, Noida - 201301</p>
+          </div>
+          <div class="col-md-4">
+            <p><i class="fas fa-phone"></i> +91-123-456789 / 99</p>
+          </div>
+          <div class="col-md-4">
+            <p><i class="fas fa-envelope"></i> info@imperialTrails.com</p>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <p><i class="fas fa-mobile-alt"></i> +91-1234567896 (WhatsApp)</p>
+          </div>
+          <div class="col-md-4">
+            <p><i class="fab fa-skype"></i> ImperialTrails</p>
+          </div>
+          <div class="col-md-4 social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-line"></div>
+        <p class="mt-3">Copyright ©2025, Imperial Trails Pvt. Ltd</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/service.js"></script>
+
+</body>
+
+</html>

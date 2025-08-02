@@ -1,0 +1,499 @@
+/* ========== Global Reset ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  line-height: 1.6;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.logo img {
+  width: 50px;
+}
+.nav-links, .nav-icons {
+  display: flex;
+  gap: 25px;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a:hover {
+  color: #FF6600;
+}
+.wide-dropdown {
+width: 800px; /* increase as needed */
+height: 250px;
+}
+
+.dropdown-links {
+display: flex;
+flex-direction: column;
+flex: 1;
+}
+
+.dropdown-image-box {
+flex-shrink: 0;
+}
+
+.dropdown-menu {
+border-radius: 0.5rem;
+transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+background-color: #f0f0f0;
+}
+
+/* ========== First Section ========== */
+.first-section {
+  margin-top: 10px;
+  padding: 0 20px 40px;
+}
+
+.first-title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.first-title span {
+  color: black;
+}
+
+.first-text {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 15px;
+}
+
+/* Image Container */
+.first-image {
+  width: 100%;
+  max-width: 800px;
+  clip-path: ellipse(85% 100% at 100% 50%);
+  overflow: hidden;
+}
+
+.first-image img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* ========== Second & Third Section Shared Styles ========== */
+.second-section,
+.third-section,
+.fifth-section{
+  padding-bottom: 40px;
+}
+
+.second-container,
+.third-container,
+.fifth-container {
+  position: relative;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block;
+  /* background-color: #f9f9f9; */
+}
+
+.second-img,
+.third-img,
+.fifth-img{
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Capsule Buttons */
+.capsule-btn,
+.capsule-btn3 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 6px 20px;
+  font-size: 0.95rem;
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  z-index: 2;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.capsule-btn:hover,
+.capsule-btn3:hover {
+  background-color: orangered;
+  color: white;
+  border-color: orangered;
+}
+
+/* Caption (if needed) */
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+}
+
+/* Tour Info Text */
+.tour-info,
+.third-info {
+  text-align: center;
+  margin-top: 10px;
+  color: #333;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+/* Show/Hide Toggle Classes */
+.hidden-info {
+  display: none;
+}
+
+.show-info {
+  display: block;
+}
+
+    .fourth-section {
+      padding: 60px 20px;
+    }
+
+    .fourth-container {
+      max-width: 1600px; /* You can adjust this: 960px, 1140px, etc. */
+      margin: 0 auto;
+      background-color: white;
+      padding: 40px;
+      border: 1px solid rgba(128, 128, 128, 0.295);
+      /* text-align: center; */
+    }
+
+    .fourth-container h6{
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    } 
+
+    .fourth-container p {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+    } 
+
+    ul.custom-orange-list,
+     ul.custom-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul.custom-orange-list li::marker ,
+ ul.custom-list  li::marker{
+  color: orangered;
+  font-weight: bold;
+}
+
+
+
+.fifth-section .card-img-top {
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+ .faq-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .accordion-button {
+      background-color: #fff;
+      box-shadow: none;
+      padding-left: 0;
+      position: relative;
+      font-weight: 500;
+    }
+
+    .accordion-button::after {
+      display: none !important;
+    }
+
+    .accordion-button span.q-mark {
+      color: orange;
+      font-weight: bold;
+      margin-right: 6px;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #ccc;
+    }
+
+    /* Enquiry Form Styling */
+    .form-box {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .form-box h5 {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .form-box input, .form-box textarea {
+      font-size: 14px;
+    }
+
+    .form-box .btn {
+      width: 100%;
+      background: orange;
+      border: none;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .capsule-outline {
+  border: 1px solid orange;
+  color: orange;
+  border-radius: 50px;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: transparent;
+  white-space: nowrap;
+  transition: 0.3s ease;
+  flex: 1 1 auto; /* Let them shrink if needed */
+  text-align: center;
+}
+
+.capsule-outline:hover {
+  background-color: orange;
+  color: white;
+}
+
+/* Ensure all capsules stay in one line with equal spacing */
+.capsules-fixed-line {
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+
+ .faq-icon {
+  color: #ff6600;
+  font-size: 20px;
+}
+   
+
+    @media(max-width: 768px) {
+      .form-box {
+        margin-top: 30px;
+      }
+    }
+
+
+
+
+
+/* ========== Responsive Styles ========== */
+@media (max-width: 992px) {
+  .first-title {
+    font-size: 2rem;
+  }
+
+  .first-text {
+    font-size: 0.95rem;
+  }
+
+  .first-section {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .first-title {
+    font-size: 1.8rem;
+  }
+
+  .first-text {
+    font-size: 0.9rem;
+  }
+
+  .first-image {
+    max-width: 100%;
+    margin-top: 20px;
+    clip-path: none;
+  }
+
+  .first-image img {
+    max-height: 300px;
+  }
+
+  .second-container,
+  .third-container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .second-img,
+  .third-img {
+    height: 200px;
+  }
+
+  .capsule-btn,
+  .capsule-btn3 {
+    font-size: 0.9rem;
+    padding: 6px 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .first-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .first-text {
+    text-align: center;
+  }
+
+  .first-image img {
+    max-height: 250px;
+  }
+
+  .first-section {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .third-section h4 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .third-container {
+    margin: 0 auto;
+  }
+
+  .third-info {
+    font-size: 0.9rem;
+  }
+}
+
+
+nav button a{
+  text-decoration: none;
+  color: white;
+  
+}
+.nav button{
+  background-color: darkred;
+ 
+}
+
+
+.footer-top {
+    background-color: #f9f9f9;
+    padding: 40px 20px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .footer-top h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .footer-top a {
+    display: block;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-decoration: none;
+  }
+
+  .footer-top a.orange {
+    color: #ff6600;
+  }
+
+  .footer-top a:hover {
+    color: #000;
+  }
+
+  .footer-mid {
+    background-color: #2a2f3a;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .footer-mid img {
+    height: 36px;
+    margin: 0 20px;
+  }
+
+  .footer-bottom {
+    background-color: #2a2f3a;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 0 10px;
+  }
+
+  .footer-bottom p, .footer-bottom a {
+    margin: 5px 0;
+    color: #ddd;
+    font-size: 14px;
+  }
+
+  .footer-bottom i {
+    color: #ff6600;
+    margin-right: 5px;
+  }
+
+  .social-icons a {
+    color: #fff;
+    margin: 0 8px;
+    border: 1px solid #ff6600;
+    border-radius: 50%;
+    padding: 6px 10px;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    background-color: #ff6600;
+  }
+
+  .footer-line {
+    border-top: 1px solid #444;
+    margin-top: 20px;
+  }
+
