@@ -1,18 +1,18 @@
 AOS.init();
 
-window.addEventListener("load", () => {
-  const preloader = document.getElementById("preloader");
-  const content = document.querySelector(".content");
+// window.addEventListener("load", () => {
+//   const preloader = document.getElementById("preloader");
+//   const content = document.querySelector(".content");
 
-  // Add fade-out class
-  preloader.classList.add("fade-out");
+//   // Add fade-out class
+//   preloader.classList.add("fade-out");
 
-  // Wait for animation to finish, then remove
-  setTimeout(() => {
-    preloader.style.display = "none";
-    content.style.display = "block";
-  }, 600);
-});
+//   // Wait for animation to finish, then remove
+//   setTimeout(() => {
+//     preloader.style.display = "none";
+//     content.style.display = "block";
+//   }, 600);
+// });
 
 const previewImage = document.getElementById('previewImage');
   const hoverItems = document.querySelectorAll('.hover-preview');
